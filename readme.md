@@ -22,7 +22,7 @@
 * Advanced
   *   Sata mode = AHCI 
   *   VT-d = 关闭
-  *   VT-x/即intel虚拟化技术 = 关闭
+  *   VT-x/即intel虚拟化技术 = 开启
 * Boot 
   *   Fastboot = disabled
   *   Boot mode = UEFI
@@ -40,7 +40,6 @@
   * 开启usb XHCI hand off
   
   * dvmt allocated设置为64m,最大值设置为max
-    
 
 ##  驱动说明
 
