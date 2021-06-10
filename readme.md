@@ -1,6 +1,6 @@
 2021.6.6 目前更新到macOS 11.4
 
-WiFi和蓝牙驱动有问题，连接不稳定，引导时一直循环Interfirmware:................，需要等很久
+WiFi和蓝牙驱动有问题，连接不稳定
 
 
 
@@ -78,3 +78,9 @@ WiFi和蓝牙驱动有问题，连接不稳定，引导时一直循环Interfirmw
 
 * 有时BIOS的设置被重置了，导致无法引导，要注意检查  例如：电量耗尽关机
 * 无法引导，可能NVRAM出了问题。重置后再添加引导项
+
+##  引导
+
+* 蓝牙驱动会导致 IntelFirmware:Firmware had been download 一直循环的出现，引导卡几分钟，将IntelBluetoothInjector.kext禁用掉
+* 一开始就卡[EB:.........]，BIOS中将CFG  LOCK关闭掉
+* 无法正常关机重启，一直卡住，需要SSDT-PMC.aml来模拟NVRAM
