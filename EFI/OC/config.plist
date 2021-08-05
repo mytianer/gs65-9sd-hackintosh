@@ -131,6 +131,8 @@
                 <false/>
                 <key>ResetLogoStatus</key>
                 <false/>
+                <key>SyncTableIds</key>
+                <false/>
             </dict>
         </dict>
         <key>Booter</key>
@@ -504,42 +506,6 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
-                    <string>IntelBluetoothFirmware.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
-                    <string>IntelBluetoothInjector.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBluetoothInjector</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
                     <string>NVMeFix.kext</string>
                     <key>Comment</key>
                     <string></string>
@@ -891,6 +857,8 @@
                 <true/>
                 <key>PowerTimeoutKernelPanic</key>
                 <true/>
+                <key>ProvideCurrentCpuInfo</key>
+                <false/>
                 <key>SetApfsTrimTimeout</key>
                 <integer>-1</integer>
                 <key>ThirdPartyDrives</key>
@@ -900,6 +868,8 @@
             </dict>
             <key>Scheme</key>
             <dict>
+                <key>CustomKernel</key>
+                <false/>
                 <key>FuzzyMatch</key>
                 <true/>
                 <key>KernelArch</key>
@@ -971,6 +941,8 @@
                     <string>Not signed for security reasons</string>
                     <key>Enabled</key>
                     <false/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
                     <key>Name</key>
                     <string>CustomOS</string>
                     <key>Path</key>
@@ -985,6 +957,8 @@
                 <true/>
                 <key>AllowSetDefault</key>
                 <true/>
+                <key>AllowToggleSip</key>
+                <false/>
                 <key>ApECID</key>
                 <integer>0</integer>
                 <key>AuthRestart</key>
@@ -1021,6 +995,8 @@
                     <string>Not signed for security reasons</string>
                     <key>Enabled</key>
                     <false/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
                     <key>Name</key>
                     <string>UEFI Shell</string>
                     <key>Path</key>
@@ -1039,6 +1015,8 @@
                     <string>Memory testing utility</string>
                     <key>Enabled</key>
                     <false/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
                     <key>Name</key>
                     <string>memcheck</string>
                     <key>Path</key>
@@ -1057,6 +1035,8 @@
                     <string>Perform shutdown</string>
                     <key>Enabled</key>
                     <false/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
                     <key>Name</key>
                     <string>Shutdown</string>
                     <key>Path</key>
@@ -1155,7 +1135,7 @@
             <false/>
             <key>Generic</key>
             <dict>
-                <key>AdviseWindows</key>
+                <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
                 <string>C02030500GU0000A8</string>
@@ -1209,6 +1189,8 @@
                 <key>AppleEvent</key>
                 <string>Auto</string>
                 <key>CustomDelays</key>
+                <false/>
+                <key>GraphicsInputMirroring</key>
                 <false/>
                 <key>KeyInitialDelay</key>
                 <integer>0</integer>
@@ -1277,7 +1259,7 @@
                 <key>ForceResolution</key>
                 <false/>
                 <key>GopPassThrough</key>
-                <false/>
+                <string>Disabled</string>
                 <key>IgnoreTextInGraphics</key>
                 <false/>
                 <key>ProvideConsoleGop</key>
@@ -1302,6 +1284,8 @@
                 <key>AppleBootPolicy</key>
                 <false/>
                 <key>AppleDebugLog</key>
+                <false/>
+                <key>AppleEg2Info</key>
                 <false/>
                 <key>AppleFramebufferInfo</key>
                 <false/>
